@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0D1C2D2A38042725C38CEEB4 /* Pods-testSegmentFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testSegmentFirebase.release.xcconfig"; path = "Target Support Files/Pods-testSegmentFirebase/Pods-testSegmentFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		1A2BD956247CC9E100AAE6B2 /* testSegmentFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testSegmentFirebase.entitlements; sourceTree = "<group>"; };
 		1A4837AB247CC7BC009A38E8 /* testSegmentFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSegmentFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4837AE247CC7BC009A38E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4837B0247CC7BC009A38E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		1A4837AD247CC7BC009A38E8 /* testSegmentFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				1A2BD956247CC9E100AAE6B2 /* testSegmentFirebase.entitlements */,
 				1A4837AE247CC7BC009A38E8 /* AppDelegate.swift */,
 				1A4837B0247CC7BC009A38E8 /* SceneDelegate.swift */,
 				1A4837B2247CC7BC009A38E8 /* ViewController.swift */,
@@ -155,7 +157,6 @@
 				AD00449C81412AE2CEE6AAC7 /* Pods-testSegmentFirebaseUITests.debug.xcconfig */,
 				320AB30528744C3BA20D97E5 /* Pods-testSegmentFirebaseUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -566,15 +567,18 @@
 			baseConfigurationReference = 3A947CB1B74A44D18E32F13F /* Pods-testSegmentFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testSegmentFirebase/testSegmentFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testSegmentFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testSegmentFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -585,15 +589,18 @@
 			baseConfigurationReference = 0D1C2D2A38042725C38CEEB4 /* Pods-testSegmentFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testSegmentFirebase/testSegmentFirebase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testSegmentFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testSegmentFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
