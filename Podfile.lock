@@ -1,16 +1,16 @@
 PODS:
-  - Analytics (3.7.0)
+  - Analytics (4.0.0-beta.1)
 
 DEPENDENCIES:
-  - Analytics (~> 3.0)
+  - Analytics (~> 4.0.0-beta.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Analytics
 
 SPEC CHECKSUMS:
-  Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
+  Analytics: 0ad8eabf3005101aae8008ba6f2eda2d6ecf0b6c
 
-PODFILE CHECKSUM: 7bb7745399bec69020c1e2796ea2a2ecd9bcfeb0
+PODFILE CHECKSUM: c65c6b5f36f112b0b5bb80f850a6e86cf31768e8
 
 COCOAPODS: 1.7.1

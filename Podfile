@@ -5,7 +5,7 @@ target 'testSegmentFirebase' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Analytics', '~> 3.0'
+  pod 'Analytics', '~> 4.0.0-beta.1'
   # Pods for testSegmentFirebase
 
   target 'testSegmentFirebaseTests' do

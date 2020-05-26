@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let configuration = SEGAnalyticsConfiguration(writeKey: "kGGrwBlAMPiYLDnddmDNT4uOwKP9VLoK")
+
+        // Enable this to record certain application events automatically!
+        configuration.trackApplicationLifecycleEvents = true
+
+        // Enable this to record screen views automatically!
+//        configuration.recordScreenViews = true
+
+        SEGAnalytics.setup(with: configuration)
+
         return true
     }
 
